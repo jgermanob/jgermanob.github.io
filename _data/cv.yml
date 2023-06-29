@@ -2,96 +2,60 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Jesus German Ortiz Barajas
     - name: Languages
-      value: English, German
+      value: Spanish, English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: MSc in Computer Science
+      institution: Universidad Nacional Autónoma de México (UNAM)
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - 'GPA: 9.80/10.00.'
+        - 'Thesis: Paraphrase identification using Sentence-CROBI, a novel deep neural network architecture based on cross-encoders and bi-encoders.'
+        - 'Advisor: Dr Gemma Bel-Enguix'
+    
+    - title: BEng in Computer engineering
+      institution: Universidad Nacional Autónoma de México (UNAM)
+      year: 2020
       description:
-        - Description 1.
-        - Description 2.
+        - 'GPA: 8.54/10.00.'
+
+    - title: Diploma in Mobile App Development for iOS
+      institution: Universidad Nacional Autónoma de México (UNAM)
+      year: 2019
+      description:
+        - 'GPA: 9.00/10.00'
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: 'Grupo de Ingeniería Lingüística'
+      institution: 'UNAM research group focusing on computational linguistics and natural language processing'
+      year: 2019 - 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Shared task organiser.
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+            - 'Participated in organising the PAR-MEX 2022 shared task: Paraphrase detection in Mexican Spanish at IberLEF 2022.'
+            - 'Designed baseline experiments using a Spanish BERT-based model and Keras and Transformers libraries.'
+            - 'Coordinated the codalab competition page and GitHub repository for the shared task.'
+            - 'Analysed the results using the F1-score as a performance metric and the Maximum Possible Accuracy and the Coincident Failure Diversity as complementariness metrics.'
+        - title: Job offers classification.
+          contents:
+            - 'Developed system performs multi-class classification of job offers using a recurrent neural network.'
+            - 'Financed by the Mexican government, its purpose is to reduce information asymmetries between job seekers and employers.'
+            - 'Model building using Keras library. It consists of a Long-short term memory layer followed by a multilayer perceptron.'
+            - 'Used SMOTE, Geometric-SMOTE and ADASYN algorithms to solve the high-imbalance-class problem.'
+        - title: Course instructor.
+          contents:
+            - 'Semester course to explain the basics of machine learning with a theoretical-practical approach.'
+            - 'An eight-student group took it with different academic backgrounds from UNAM and the private sector.'
+            - 'Prepared lessons using the book Artificial Intelligence with an introduction to machine learning by Richard E. Neapolitan and Xia Jiang; Kaggle datasets, the sci-kit learn library and python scripts.'
+        - title: Aggressiveness detection  on Twitter.
+          contents:
+            - 'App that classifies Mexican Spanish tweets in aggressive or non-aggressive classes using machine learning and python.'
+            - 'Uses multiple types of n-grams such as character n-grams, word n-grams, and aggressive words n-grams as features.'
+            - 'Implements a support vector machine as a classifier with SciKit-learn and microTC framework for parameter optimization.'
+            - 'Achieved an F1-score of 0.4549, 5th place of 26 competitors at MEX-A3T 2019 aggressiveness identification task.'
