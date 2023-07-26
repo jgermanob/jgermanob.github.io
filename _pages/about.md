@@ -10,7 +10,7 @@ profile:
   image_circular: true # crops the image to make it circular
   address: >
     <p style='color=$green-color-dark'>email:</p>
-    <p>jortizb [at] iingen [dot] unam [dot] mx</p>
+    <p>jgermanmx [at] gmail [dot] com</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 news: true  # includes a list of news items
