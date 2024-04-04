@@ -21,4 +21,4 @@ I have a master's degree in computer science from the Universidad Nacional Autó
 
 As a master's student, I specialised in deep learning for natural language understanding. I proposed a novel architecture based on pre-trained language models for sentence pairs tasks during my thesis project. 
 
-Currently, I am interested in working on natural language understanding and generation problems using pre-trained language models and improving their capacities by working on different research axes, such as proposing new pre-trained tasks, creating new fine-tuning algorithms, modifying the transformer architecture or applying knowledge destination techniques.
+Currently, I am a Research Assistant at MBZUAI, working on parameter-efficient fine-tuning techniques for LLMs under the supervision of [Prof. Thamar Solorio](https://mbzuai.ac.ae/study/faculty/thamar-solorio/). 
