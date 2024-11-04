@@ -1,6 +1,22 @@
 ---
 layout: default
 ---
+<style>
+  .pdf-container {
+      width: 100%; /* Full width of the parent */
+      height: 0; /* Set to zero to use padding for aspect ratio */
+      padding-top: 100%; /* Aspect ratio of 1:1 (height: width) */
+      position: relative; /* Positioning context for the object */
+  }
+
+  .pdf-container object {
+      position: absolute; /* Position it absolutely within the container */
+      top: 0; 
+      left: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+  }
+</style>
 <!-- _layouts/cv.html -->
         <!--<div class="post">
 
@@ -35,4 +51,8 @@ layout: default
           </article>
         </div> -->
 
-        <object data="../assets/pdf/CV_GermanOrtiz.pdf" width="1000" height="1000" type='application/pdf'></object>
+        <div class="pdf-container">
+          <object data="../assets/pdf/CV_GermanOrtiz.pdf" type="application/pdf">
+              <p>Your browser does not support PDFs. <a href="../assets/pdf/CV_GermanOrtiz.pdf">Download the PDF</a>.</p>
+          </object>
+      </div>
