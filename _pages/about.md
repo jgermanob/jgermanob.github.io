@@ -22,4 +22,4 @@ I am a PhD student in the [UKP lab](https://www.informatik.tu-darmstadt.de/ukp/u
 Previously, I served as a Research Assistant at the [Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)](https://ritual-uh.github.io/web/), focusing on parameter-efficient fine-tuning techniques for Large Language Models (LLMs) under the guidance of [Prof. Thamar Solorio](https://mbzuai.ac.ae/study/faculty/thamar-solorio/).
 
 
-I completed my MSc in Computer Science at the [Universidad Nacional Autónoma de México (UNAM)](http://english.unam.mx), where I had the privilege of being advised by [Dr Gemma Bel-Engix](https://www.iingen.unam.mx/es-mx/Investigacion/Academicos/Paginas/GBelE.aspx).
+I completed my MSc in Computer Science at the [Universidad Nacional Autónoma de México (UNAM)](http://english.unam.mx), where I had the privilege of being advised by [Dr Gemma Bel-Enguix](https://www.iingen.unam.mx/es-mx/Investigacion/Academicos/Paginas/GBelE.aspx).
