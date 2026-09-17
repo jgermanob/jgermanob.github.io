@@ -9,29 +9,88 @@
 - title: Education
   type: time_table
   contents:
-    - title: MSc in Computer Science
-      institution: Universidad Nacional Autónoma de México (UNAM)
-      year: 2023
+    - title: PhD in Computer Science
+      institution: 'Institute for Computer Science, Artificial Intelligence and Technology (INSAIT), Sofia, Bulgaria'
+      year: Nov 2024 - Present
+      description:
+        - 'Advisor: Prof. Iryna Gurevych'
+
+    - title: MSc in Computer Science and Engineering
+      institution: 'Universidad Nacional Autónoma de México (UNAM), Mexico City, Mexico'
+      year: Sept 2020 - Dec 2022
       description:
         - 'GPA: 9.80/10.00.'
         - 'Thesis: Paraphrase identification using Sentence-CROBI, a novel deep neural network architecture based on cross-encoders and bi-encoders.'
         - 'Advisor: Dr Gemma Bel-Enguix'
-    
-    - title: BEng in Computer engineering
-      institution: Universidad Nacional Autónoma de México (UNAM)
-      year: 2020
+
+    - title: Diploma in Mobile App Development for iOS
+      institution: 'Universidad Nacional Autónoma de México (UNAM), Mexico City, Mexico'
+      year: Feb 2019 - July 2019
+      description:
+        - 'GPA: 9.00/10.00'
+
+    - title: BEng in Computer Engineering
+      institution: 'Universidad Nacional Autónoma de México (UNAM), Mexico City, Mexico'
+      year: Aug 2014 - Dec 2018
       description:
         - 'GPA: 8.54/10.00.'
 
-    - title: Diploma in Mobile App Development for iOS
-      institution: Universidad Nacional Autónoma de México (UNAM)
-      year: 2019
+- title: Academic Service
+  type: time_table
+  contents:
+    - title: Bachelor's Thesis Supervisor
+      institution: 'TU Darmstadt, Department of Computer Science'
+      year: July 2026
       description:
-        - 'GPA: 9.00/10.00'
+        - 'Supervised Marius Hoch''s bachelor thesis, "Enhancing MLLM Chart Question Answering."'
+        - 'Submitted July 17, 2026.'
+
+    - title: ARR Reviewer
+      institution: ACL Rolling Review (ARR)
+      year: May 2026
+      description:
+        - 'Reviewed 4 papers.'
+        - 'One review selected as a Great Review.'
+
+    - title: ARR Reviewer
+      institution: ACL Rolling Review (ARR)
+      year: March 2026
+      description:
+        - 'Reviewed 4 papers.'
+
+    - title: ARR Reviewer
+      institution: ACL Rolling Review (ARR)
+      year: January 2026
+      description:
+        - 'Reviewed 4 papers.'
+
+    - title: Graduate Teaching Assistant, Text Mining
+      institution: 'Posgrado en Ciencia e Ingeniería de la Computación, UNAM'
+      year: Jan 2023 - Jun 2023
+
+    - title: Teaching, Natural Language Processing
+      institution: 'Colegio Científico de Datos (COCID)'
+      year: May 2023
+
+    - title: Reviewer
+      institution: '21st Mexican International Conference on Artificial Intelligence (MICAI)'
+      year: Aug 2022
+
+    - title: Teaching, Introduction to Machine Learning
+      institution: 'Instituto de Ingeniería, UNAM'
+      year: Aug 2019 - Nov 2019
 
 - title: Experience
   type: time_table
   contents:
+    - title: Research Assistant
+      institution: 'Mohamed Bin Zayed University of Artificial Intelligence (MBZUAI): Natural Language Processing Department'
+      year: Jan 2024 - Oct 2024
+      description:
+        - 'Worked on parameter-efficient fine-tuning techniques for Large Language Models (LLMs).'
+        - 'Contributed to CVQA, a multicultural, multilingual question-answering benchmark, by collecting, labelling, and validating image-question pairs in Mexican Spanish and English.'
+        - 'Mentor at the MBZUAI Undergraduate Research Internship Program (UGRIP).'
+
     - title: 'Grupo de Ingeniería Lingüística'
       institution: 'UNAM research group focusing on computational linguistics and natural language processing'
       year: 2019 - 2022
@@ -59,3 +118,40 @@
             - 'Uses multiple types of n-grams such as character n-grams, word n-grams, and aggressive words n-grams as features.'
             - 'Implements a support vector machine as a classifier with SciKit-learn and microTC framework for parameter optimization.'
             - 'Achieved an F1-score of 0.4549, 5th place of 26 competitors at MEX-A3T 2019 aggressiveness identification task.'
+
+- title: Awards & Honors
+  type: time_table
+  contents:
+    - title: 'José Negrete Award — Best master''s thesis in an AI-related field'
+      institution: Mexican Society for Artificial Intelligence (SMIA)
+      year: 2023
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Languages
+      items:
+        - Python
+        - Swift
+        - Java
+        - C
+        - PHP
+        - Javascript
+
+    - title: Libraries
+      items:
+        - Tensorflow
+        - Pytorch
+        - Sci-kit learn
+        - Pandas
+        - Numpy
+        - Scipy
+        - NLTK
+        - Spacy
+        - Transformers
+
+    - title: Tools
+      items:
+        - Github
+        - Latex
+        - HTML
