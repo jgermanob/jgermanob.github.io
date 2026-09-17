@@ -23,3 +23,5 @@ Previously, I served as a Research Assistant at the [Mohamed bin Zayed Universit
 
 
 I completed my MSc in Computer Science at the [Universidad Nacional Autónoma de México (UNAM)](http://english.unam.mx), where I had the privilege of being advised by [Dr Gemma Bel-Enguix](https://www.iingen.unam.mx/es-mx/Investigacion/Academicos/Paginas/GBelE.aspx).
+
+In my free time, I enjoy snowboarding 🏂, mountain biking 🚵, and playing football ⚽. I'm a fan of Pumas UNAM <img src="/assets/img/pumas_unam_logo.png" alt="Pumas UNAM" height="20" style="vertical-align: middle;">, Diablos Rojos del México <img src="/assets/img/diablos_rojos_logo.svg" alt="Diablos Rojos del México" height="20" style="vertical-align: middle;">, and CSKA Sofia <img src="/assets/img/cska_sofia_logo.svg" alt="CSKA Sofia" height="20" style="vertical-align: middle;">.
