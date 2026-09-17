@@ -1,4 +1,4 @@
-- title: General Information
+- title: 👤 General Information
   type: map
   contents:
     - name: Full Name
@@ -6,14 +6,15 @@
     - name: Languages
       value: Spanish, English
 
-- title: Education
+- title: 🎓 Education
   type: time_table
   contents:
     - title: PhD in Computer Science
-      institution: 'Institute for Computer Science, Artificial Intelligence and Technology (INSAIT), Sofia, Bulgaria'
+      institution: 'Institute for Computer Science, Artificial Intelligence and Technology (INSAIT), Sofia, Bulgaria & TU Darmstadt, Germany'
       year: Nov 2024 - Present
       description:
         - 'Advisor: Prof. Iryna Gurevych'
+        - 'Jointly enrolled at INSAIT and TU Darmstadt (UKP Lab).'
 
     - title: MSc in Computer Science and Engineering
       institution: 'Universidad Nacional Autónoma de México (UNAM), Mexico City, Mexico'
@@ -35,7 +36,7 @@
       description:
         - 'GPA: 8.54/10.00.'
 
-- title: Academic Service
+- title: 🤝 Academic Service
   type: time_table
   contents:
     - title: Bachelor's Thesis Supervisor
@@ -80,7 +81,7 @@
       institution: 'Instituto de Ingeniería, UNAM'
       year: Aug 2019 - Nov 2019
 
-- title: Experience
+- title: 💼 Experience
   type: time_table
   contents:
     - title: Research Assistant
@@ -119,14 +120,14 @@
             - 'Implements a support vector machine as a classifier with SciKit-learn and microTC framework for parameter optimization.'
             - 'Achieved an F1-score of 0.4549, 5th place of 26 competitors at MEX-A3T 2019 aggressiveness identification task.'
 
-- title: Awards & Honors
+- title: 🏆 Awards & Honors
   type: time_table
   contents:
     - title: 'José Negrete Award — Best master''s thesis in an AI-related field'
       institution: Mexican Society for Artificial Intelligence (SMIA)
       year: 2023
 
-- title: Skills
+- title: 🛠️ Skills
   type: nested_list
   contents:
     - title: Languages
