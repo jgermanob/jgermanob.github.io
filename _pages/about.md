@@ -5,12 +5,22 @@ permalink: /
 subtitle:
 
 profile:
-  align: right
   image: GermanOrtiz_pic.jpg
   image_circular: true # crops the image to make it circular
   address: >
-    <p style='color=$green-color-dark'>email:</p>
+    <p>email:</p>
     <p>german [dot] ortiz [at] insait [dot] ai</p>
+
+research_interests:
+  - number: "01"
+    title: Multimodal Fact-Checking
+    description: Verifying claims by jointly reasoning over text and visual evidence.
+  - number: "02"
+    title: Parameter-Efficient Fine-Tuning
+    description: Adapting large language models to new tasks under limited compute and data.
+  - number: "03"
+    title: Natural Language Processing
+    description: Broader interests in NLP, with a focus on low-resource and multilingual settings.
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 news: true  # includes a list of news items
