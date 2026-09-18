@@ -3,88 +3,130 @@ layout: default
 ---
 
 <!-- about.html -->
-      <div class="post">
-        <header class="post-header text-center">
-          {% if page.profile -%}
-          <div class="profile centered">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+<!-- Ported from atnafuatx.github.io's minimal-home.html layout. -->
+<div class="post minimal-about">
 
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid rounded" -%}
-              {% endif %}
+  <!-- Hero: portrait + name + role + affiliation + socials -->
+  <header class="hero" data-reveal>
+    {% if page.profile.image -%}
+    <div class="portrait">
+      {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+      {% include figure.html path=profile_image_path class="img-fluid" alt=page.profile.image -%}
+    </div>
+    {%- endif %}
+    <div class="hero-text">
+      <h1 class="hero-title">
+        {% if site.title == "blank" -%}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+      </h1>
+      {% if page.role_tag -%}
+      <p class="role">
+        <span class="role-tag">{{ page.role_tag }}</span>
+      </p>
+      {%- endif %}
+      {% if page.affiliation -%}
+      <p class="affiliation">
+        <a href="{{ page.affiliation.url }}">{{ page.affiliation.name }}</a>
+        {%- if page.affiliation.location %} <span class="dot">&middot;</span> {{ page.affiliation.location }}{% endif %}
+      </p>
+      {%- endif %}
+      {% if page.socials -%}
+      <ul class="socials">
+        {%- for item in page.socials %}
+        <li>
+          {%- if item.url -%}
+          <a href="{{ item.url }}" target="_blank" rel="noopener"><i class="{{ item.icon }}"></i> {{ item.label }}</a>
+          {%- else -%}
+          <span><i class="{{ item.icon }}"></i> {{ item.label }}</span>
+          {%- endif -%}
+        </li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+  </header>
 
-              {% include figure.html
-              path=profile_image_path
-              class=profile_image_class
-              alt=page.profile.image -%}
-            {% endif -%}
-          </div>
+  <!-- Block 1: Bio -->
+  <section class="block block--bio" data-reveal>
+    <div class="block-label">About</div>
+    {{ content }}
+  </section>
+
+  <!-- Block 2: Research interests -->
+  {% if page.research_interests -%}
+  <section class="block block--interests" data-reveal>
+    <div class="block-label">Research interests</div>
+    <div class="interest-grid">
+      {%- for item in page.research_interests %}
+      <article class="interest-card" data-reveal>
+        <span class="interest-num">{{ item.number }}</span>
+        <h3 class="interest-title">{{ item.title }}</h3>
+        <p class="interest-body">{{ item.description }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  <!-- Block 3: Spotlight publications -->
+  {% if page.spotlight_papers -%}
+  <section class="block block--spotlight" data-reveal>
+    <div class="block-label">Spotlight</div>
+    {%- for paper in page.spotlight_papers %}
+    <article class="spotlight-card" data-reveal>
+      <div class="spotlight-meta">
+        <span class="badge badge--venue">{{ paper.venue }}</span>
+      </div>
+      <h3 class="spotlight-title"><a href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a></h3>
+      <p class="spotlight-authors">{{ paper.authors }}</p>
+      <p class="spotlight-blurb">{{ paper.blurb }}</p>
+    </article>
+    {%- endfor %}
+    <a class="spotlight-cta" href="{{ '/publications/' | relative_url }}">See all publications &rarr;</a>
+  </section>
+  {%- endif %}
+
+  <!-- Block 4: News timeline -->
+  {% if page.news and site.announcements.enabled -%}
+  <section class="block block--timeline" data-reveal>
+    <div class="block-label">News</div>
+    <ol class="timeline">
+      {%- assign news_size = site.news | size -%}
+      {%- assign news = site.news | reverse -%}
+      {%- if site.announcements.limit %}{% assign news_limit = site.announcements.limit %}{% else %}{% assign news_limit = news_size %}{% endif -%}
+      {%- for item in news limit: news_limit %}
+      <li class="t-item" data-reveal>
+        <span class="t-dot" aria-hidden="true"></span>
+        <span class="t-date">{{ item.date | date: "%b %-d, %Y" }}</span>
+        <span class="t-body">
+          {%- if item.inline -%}
+          {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+          {%- else -%}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
           {%- endif %}
-
-          <h1 class="post-title">
-           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-          {%- if page.profile.address %}
-          <div class="address">
-            {{ page.profile.address }}
-          </div>
-          {%- endif %}
-        </header>
-
-        <article>
-          <div class="clearfix">
-            {{ content }}
-          </div>
-
-          <!-- Research interests -->
-          {% if page.research_interests -%}
-            <h2>research interests</h2>
-            <div class="research-interests">
-              {%- for item in page.research_interests %}
-              <div class="research-item">
-                <span class="research-num">{{ item.number }}</span>
-                <h4>{{ item.title }}</h4>
-                <p>{{ item.description }}</p>
-              </div>
-              {%- endfor %}
-            </div>
-          {%- endif %}
-
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-            {%- include selected_papers.html %}
-          {%- endif %}
-
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
-          {%- endif %}
-
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
-
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
-          {%- endif %}
-        </article>
+        </span>
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+  {%- endif %}
 
 </div>
+
+<script>
+  (function () {
+    var targets = document.querySelectorAll('.minimal-about [data-reveal]');
+    if (!('IntersectionObserver' in window) || !targets.length) {
+      targets.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    targets.forEach(function (el) { io.observe(el); });
+  })();
+</script>

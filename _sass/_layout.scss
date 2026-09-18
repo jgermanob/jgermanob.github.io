@@ -31,64 +31,6 @@ body.sticky-bottom-footer {
   img {
     width: 100%;
   }
-
-  &.centered {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-
-    img {
-      width: 160px;
-      max-width: 160px;
-    }
-  }
-}
-
-.post-header.text-center {
-  .address {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-top: 0.5rem;
-    color: var(--global-text-color-light);
-
-    p {
-      margin-bottom: 0;
-    }
-  }
-}
-
-// Research interests
-.research-interests {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin: 1.5rem 0 2.5rem;
-
-  .research-item {
-    flex: 1 1 220px;
-
-    .research-num {
-      display: block;
-      font-family: monospace;
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--global-text-color-light);
-      margin-bottom: 0.25rem;
-    }
-
-    h4 {
-      margin-bottom: 0.4rem;
-      font-size: 1.05rem;
-    }
-
-    p {
-      color: var(--global-text-color-light);
-      font-size: 0.95rem;
-      margin-bottom: 0;
-    }
-  }
 }
 
 // TODO: redefine content layout.
