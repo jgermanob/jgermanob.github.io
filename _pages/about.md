@@ -45,7 +45,7 @@ spotlight_papers:
     url: https://arxiv.org/abs/2601.12983
     authors: "<span class=\"me\">Jesus-German Ortiz-Barajas</span>, Jonathan Tonglet, Vivek Gupta, Iryna Gurevych"
     blurb: "Studies how adversarial instructions can manipulate LLM-generated charts to misrepresent the underlying data."
-  - venue: ACL 2025
+  - venue: Findings of ACL 2025
     title: "Statement-Tuning Enables Efficient Cross-lingual Generalization in Encoder-only Models"
     url: https://arxiv.org/abs/2506.01592
     authors: "Ahmed Elshabrawy, Thanh-Nhi Nguyen, Yeeun Kang, Li Feng, Annant Jain, Faadil Abdullah Shaikh, Jonibek Mansurov, Mohamed Fazli Mohamed Imam, <span class=\"me\">Jesus-German Ortiz-Barajas</span>, Rendi Chevi, Alham Fikri Aji"
