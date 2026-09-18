@@ -1,4 +1,5 @@
-- title: 👤 General Information
+- title: General Information
+  photo: jgerman.jpg
   type: map
   contents:
     - name: Full Name

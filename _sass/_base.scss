@@ -357,6 +357,16 @@ footer.sticky-bottom {
 
 // CV
 
+.cv-photo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 10px;
+  border: 1px solid var(--global-divider-color);
+}
+
 .cv {
   margin-bottom: 40px;
 

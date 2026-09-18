@@ -11,21 +11,21 @@
   --ma-rule: #e5e5e5;
   --ma-bg: #fdfdfc;
   --ma-bg-tint: #f7f5f1;
-  --ma-accent: #8b1a1a;
-  --ma-accent-soft: rgba(139, 26, 26, 0.08);
+  --ma-accent: #0b7285;
+  --ma-accent-soft: rgba(11, 114, 133, 0.08);
 
-  --ma-c-bio: #8b1a1a;
-  --ma-c-bio-soft: rgba(139, 26, 26, 0.08);
-  --ma-c-bio-tint: rgba(139, 26, 26, 0.04);
-  --ma-c-int: #1f6e44;
-  --ma-c-int-soft: rgba(31, 110, 68, 0.08);
-  --ma-c-int-tint: rgba(31, 110, 68, 0.04);
-  --ma-c-spot: #b45309;
-  --ma-c-spot-soft: rgba(180, 83, 9, 0.10);
-  --ma-c-spot-tint: rgba(180, 83, 9, 0.05);
-  --ma-c-news: #1e4d6e;
-  --ma-c-news-soft: rgba(30, 77, 110, 0.10);
-  --ma-c-news-tint: rgba(30, 77, 110, 0.04);
+  --ma-c-bio: #0b7285;
+  --ma-c-bio-soft: rgba(11, 114, 133, 0.08);
+  --ma-c-bio-tint: rgba(11, 114, 133, 0.04);
+  --ma-c-int: #0b7285;
+  --ma-c-int-soft: rgba(11, 114, 133, 0.08);
+  --ma-c-int-tint: rgba(11, 114, 133, 0.04);
+  --ma-c-spot: #0b7285;
+  --ma-c-spot-soft: rgba(11, 114, 133, 0.10);
+  --ma-c-spot-tint: rgba(11, 114, 133, 0.05);
+  --ma-c-news: #0b7285;
+  --ma-c-news-soft: rgba(11, 114, 133, 0.10);
+  --ma-c-news-tint: rgba(11, 114, 133, 0.04);
 
   --ma-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
   --ma-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -41,8 +41,21 @@
     --ma-rule: #3a3a3a;
     --ma-bg: #1c1c1d;
     --ma-bg-tint: #232324;
-    --ma-accent: #e0736b;
-    --ma-accent-soft: rgba(224, 115, 107, 0.12);
+    --ma-accent: #22d3ee;
+    --ma-accent-soft: rgba(34, 211, 238, 0.12);
+
+    --ma-c-bio: #22d3ee;
+    --ma-c-bio-soft: rgba(34, 211, 238, 0.12);
+    --ma-c-bio-tint: rgba(34, 211, 238, 0.05);
+    --ma-c-int: #22d3ee;
+    --ma-c-int-soft: rgba(34, 211, 238, 0.12);
+    --ma-c-int-tint: rgba(34, 211, 238, 0.05);
+    --ma-c-spot: #22d3ee;
+    --ma-c-spot-soft: rgba(34, 211, 238, 0.14);
+    --ma-c-spot-tint: rgba(34, 211, 238, 0.06);
+    --ma-c-news: #22d3ee;
+    --ma-c-news-soft: rgba(34, 211, 238, 0.14);
+    --ma-c-news-tint: rgba(34, 211, 238, 0.05);
   }
 
   a {
@@ -459,8 +472,8 @@
   }
 
   .badge--venue {
-    background: transparent;
-    color: var(--ma-muted);
+    background: transparent !important;
+    color: var(--ma-muted) !important;
     border: 1px solid var(--ma-rule);
   }
 
